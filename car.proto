@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+
+enum Direction {
+    FRONT = 0;
+    BACK = 1;
+    RIGHT = 2;
+    LEFT = 3;
+}
+
+service CarRpc {
+    rpc commond(CarControlRequest) returns (CarControlResponse);
+}
+
+message CarControlRequest {
+    Direction direction = 1;
+}
+
+message CarControlResponse {
+    string err = 1;
+}
