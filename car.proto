@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option java_multiple_files = true;
 option java_package = "org.eddy.car.proto";
-option java_outer_classname = "CarRpcGrpc";
+option java_outer_classname = "CarGrpc";
 
 enum Direction {
     FRONT = 0;
