@@ -12,7 +12,7 @@ enum Direction {
 }
 
 service CarRpc {
-    rpc commond(CarControlRequest) returns (CarControlResponse);
+    rpc command (CarControlRequest) returns (CarControlResponse);
 }
 
 message CarControlRequest {
